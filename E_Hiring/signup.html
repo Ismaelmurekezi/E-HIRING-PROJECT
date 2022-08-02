@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-hiring form</title>
+        <style>
+            *{
+                margin: 0px;
+                padding:0px ;
+            }
+.form{
+    font-size: 25px;
+   margin: 100px;
+   padding:50px;
+    
+    box-shadow: -2px -2px 20px 1px;
+    
+}
+.tt{
+   width:500px; 
+   height: 50px;
+   border: 2px solid grey;
+   border-radius: 5px;
+   }
+.tt1{
+    width: 200px;
+}
+.tt3{
+    width:300px; 
+    height: 30px;
+   /* padding:20px; */
+   border:2px solid grey;
+   border-radius: 5px;
+   
+}
+.form button a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.form button{
+    width: 100px;
+    height: 30px;
+}
+.loco{
+    text-align: center;
+}
+        </style>
+         <script src="index.js" defer></script>
+    </head>
+    <body>
+        <form action="signup.php"  class="form" method="POST">
+            <h1>CREATING ACCOUNT FORM</h1> <br>
+            <label for="">First name:</label><br>
+            <input type="text"name="firstname"class="tt" id="input"><br>
+            <label for="">Last name:</label><br>
+            <input type="text"name="lastname"class="tt"id="input"> <br>
+            <label for="">Date of birth:</label><br>
+            <input type="number"name="birthdate"class="tt"id="input"><br>
+            <label for="">Gender:</label> <br>
+            <input type="radio"name="gender"> Male <br>
+            <input type="radio"name="gender"> Female <br>
+            <label for="" class="loco">Location</label> <br>
+            <label for="">Tel:</label> <br>
+            <input type="text"name="tel"class="tt"id="input"> <br>
+            <label for="">City:</label> <br>
+            <select name="" id=""class="tt1"id="input">
+                <option value="" name="city">Kigali</option> <br>
+                <option value=""name="city">Rubavu</option> <br>
+                <option value=""name="city">Rusizi</option> <br>
+                <option value=""name="city">Musanze</option> <br>
+                <option value=""name="city">Nyagatare</option> <br>
+                <option value=""name="city">Nyagatare</option> <br>
+                <option value=""name="city">Rwamagana</option> <br>
+                <option value=""name="city">Karongi</option> <br>
+                <option value=""name="city">Nyanza</option> <br>
+                <option value=""name="city">Huye</option> <br>
+                <option value=""name="city">Rulindo</option> <br>
+                <option value=""name="city">Bugesera</option> <br>
+                <option value=""name="city">Burera</option> <br>
+                <option value=""name="city">Kamonyi</option> <br>
+                <option value=""name="city">Gakenke</option> <br>
+                <option value=""name="city">Nyabihu</option> <br>
+                <option value=""name="city">Nyamasheke</option> <br>
+                <option value=""name="city">Rutsiro</option> <br>
+                <option value=""name="city">Gatsibo</option> <br>
+                <option value=""name="city">Ruhango</option> <br>
+                <option value=""name="city">Nyaruguru</option> <br>
+                <option value=""name="city">Gisagara</option> <br>
+                <option value=""name="city">Kirehe</option> <br>
+              </select> <br>
+         <label for="">password:</label>
+         <input type="password"name="password"placeholder=""class="tt3"id="input2"> <br>
+         <label for="">confirm:</label> <br>
+         <input type="password"name="comfirmpass"placeholder=""class="tt3"id="input3"> <br>
+         <p id="input4" style="display: none;">Password doesn't match.</p>
+         <p id="input5" style="display: none;">Password match.</p>
+            <button type="submit"name="submit"><a href="##"onclick="check()"> Submit</a></button>
+        </form>
+       
+        <script>
+            function check(){
+            let x=document.getElementById('input2');
+            let y=document.getElementById('input3');
+            var x4=document.getElementById('input4');
+            var x5=document.getElementById('input5');
+            // x2="";
+            // x3="";
+            if(x == y ){
+                // x4.style.display="block";
+                // x4.style.display="block";
+                window.alert("password match");}
+            else
+                // x5.style.display="block";
+                window.alert("Password doesn't match");
+            
+        
+        }
+</script>
+</body>
+</html>

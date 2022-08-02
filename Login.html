@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-hiring form</title>
+        <style>
+            *{
+                margin: 0px;
+                padding:0px ;
+            }
+.form{
+    font-size: 25px;
+   margin: 100px;
+   padding:50px;
+    
+    box-shadow: -2px -2px 20px 1px;
+    
+}
+
+.tt3{
+    width:300px; 
+    height: 30px;
+   /* padding:20px; */
+   border:2px solid grey;
+   border-radius: 5px;
+   margin-top: 10px;
+   
+}
+.form button{
+    width: 100px;
+    height: 30px;
+    margin-left: 300px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: grey;
+}
+        </style>
+    </head>
+    <body>
+        <form action="retreivelogin.php" method="POST" class="form">
+           <h2>ENTER YOUR CREDENTIAL BELOW</h2>
+         <label for="">Email:</label>
+         <input type="text"name="email"placeholder=""class="tt3"> <br>
+         <label for="">password:</label>
+         <input type="password"name="password"placeholder=""class="tt3"> <br>
+            <button type="submit"name="submit"> Submit</button>
+        </form>
+    </body>
+</html>

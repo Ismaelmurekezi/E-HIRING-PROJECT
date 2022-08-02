@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-hiring form</title>
+        <style>
+            *{
+                margin: 0px;
+                padding:0px ;
+            }
+.form{
+    font-size: 25px;
+   margin: 100px;
+   padding:50px;
+    
+    box-shadow: -2px -2px 20px 1px;
+}
+.tt{
+   width:500px; 
+   padding:20px;
+   border: none;
+   border-bottom: 2px solid grey;
+   border-left: 2px solid grey;
+}
+.tt1{
+    width: 200px;
+}
+.form button a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.form button{
+    width: 100px;
+    height: 30px;
+}
+        </style>
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <form  action="login.php"class="form" method="POST">
+            <h1>FILL APPLICATION FORM</h1> <br>
+            <label for="">First name:</label><br>
+            <input type="text"name="firstname"class="tt"><br>
+            <label for="">Last name:</label><br>
+            <input type="text"name="lastname"class="tt"> <br>
+            <label for="">Age:</label><br>
+            <input type="number"name="firstname"class="tt"><br>
+            <label for="">Gender:</label> <br>
+           <input type="radio"name="gender">male<br>
+           <input type="radio"name="gender">Female<br>
+           <label for="">Tel:</label><br>
+            <input type="number"name="tel"class="tt"><br>
+            <label for="">Email:</label><br>
+            <input type="email"name="email"class="tt"><br>
+            <label for="">Martial status:</label> <br>
+           <input type="radio"name="status"> Married <br>
+           <input type="radio"name="status"> Single <br>
+           <input type="radio"name="status"> Divorced <br>
+        <label for="">Job position:</label> <br>
+            <input type="text"name="position"class="tt"> <br>
+            <label for="">Job categories:</label> <br>
+            <select name="category" id=""placeholder=""class="tt1">
+                <option value=""name="category">Monthly job</option>
+                <option value=""name="category">Pertime job</option>
+                <option value=""name="category">Tender job</option>
+            </select> <br>
+            <label for="">Required document(CV etc) :</label>
+            <input type="file"name=""> <br>
+            <button type="submit"name="button" ><a href="##" id="subf"> Submit</a></button>
+        
+            
+        </form>
+    </body>
+</html>
